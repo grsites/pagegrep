@@ -21,6 +21,17 @@
   "permissions": [
     "tabs", "storage"
   ],
+  "commands": {
+    "toggle-greppo": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U",
+        "mac": "Command+Shift+U",
+        "windows": "Ctrl+Shift+U",
+        "linux": "Ctrl+Shift+U"
+      },
+      "description": "Toggle Greppo"
+    }
+  },
   "content_scripts": [
     {
       "matches": [

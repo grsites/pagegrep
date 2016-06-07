@@ -5,53 +5,24 @@ function Hilitor(col_class)
 {
 
   var targetNode = document.body;
-  var hiliteTag = "SPAN";
+  var hiliteTag = "EM";
   var skipTags = new RegExp("^(?:" + hiliteTag + "|SCRIPT|FORM)$");
   var wordClass = [];
   var matchRegex = "";
-  var openLeft = false;
-  var openRight = false;
-
-  this.setMatchType = function(type)
-  {
-    switch(type)
-    {
-      case "left":
-        this.openLeft = false;
-        this.openRight = true;
-        break;
-      case "right":
-        this.openLeft = true;
-        this.openRight = false;
-        break;
-      case "open":
-        this.openLeft = this.openRight = true;
-        break;
-      default:
-        this.openLeft = this.openRight = false;
-    }
-  };
+  var openLeft = true;
+  var openRight = true;
 
   this.setRegex = function(input)
   {
-    input = input.replace(/^[^\w]+|[^\w]+$/g, "").replace(/[^\w'-]+/g, "|");
-    input = input.replace(/^\||\|$/g, "");
+    input = input.replace(" ", "\\s");
     if(input) {
       var re = "(" + input + ")";
-      if(!this.openLeft) re = "\\b" + re;
-      if(!this.openRight) re = re + "\\b";
+      if(!openLeft) re = "\\b" + re;
+      if(!openRight) re = re + "\\b";
       matchRegex = new RegExp(re, "i");
       return true;
     }
     return false;
-  };
-
-  this.getRegex = function()
-  {
-    var retval = matchRegex.toString();
-    retval = retval.replace(/(^\/(\\b)?|\(|\)|(\\b)?\/i$)/g, "");
-    retval = retval.replace(/\|/g, " ");
-    return retval;
   };
 
   // recursively apply word highlighting

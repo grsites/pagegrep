@@ -2,33 +2,33 @@
  * Place your custom CSS styles here.
  **/
 
-span.greppo {
-    display: inline-block:
+.greppo {
+    display: inline-block;
     font-weight: bold;
     border: 1px solid #666;
 }
 
-span.greppo.red {
+.greppo.red {
     color: white;
     background-color: red;
 }
 
-span.greppo.yellow {
+.greppo.yellow {
     color: black;
     background-color: yellow;
 }
 
-span.greppo.blue {
+.greppo.blue {
     color: white;
     background-color: blue;
 }
 
-span.greppo.green {
+.greppo.green {
     color: white;
     background-color: green;
 }
 
-span.greppo.orange {
+.greppo.orange {
     color: black;
     background-color: orange;
 }
