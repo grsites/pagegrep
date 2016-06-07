@@ -1,0 +1,18 @@
+chrome.runtime.sendMessage({ method : "getSettings" }, function(response) {
+	var readyStateCheckInterval = setInterval(function() {
+	if (document.readyState === "complete") {
+	    clearInterval(readyStateCheckInterval);
+	    var s = response.settings;
+            console.log(s);
+	    var col1 = s['store.settings.group1_color'];
+            var kw1 = s['store.settings.group1_keywords'].split("\\n");;
+            var myHilitor = new Hilitor("#33bb33");
+            $.each(kw1, function (index, kw) {
+		if (kw.length < 3) return;
+		console.log(kw);
+                myHilitor.apply(kw);
+            });
+	}
+	}, 10);
+});
+

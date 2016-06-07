@@ -1,0 +1,45 @@
+/*
+// Add your own style rules here, not in css/main.css
+// or css/setting.css for easy updating reasons.
+*/
+
+div.setting.container.radio-buttons {
+    display: inline-block;
+    width: 120px;
+}
+
+label.setting.label.radio-buttons {
+    display: block;
+}
+
+.color_swatch {
+    display: inline-block;
+    width: 70px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.red.color_swatch {
+    color: white;
+    background-color: red;
+}
+
+.yellow.color_swatch {
+    color: black;
+    background-color: yellow;
+}
+
+.blue.color_swatch {
+    color: white;
+    background-color: blue;
+}
+
+.green.color_swatch {
+    color: white;
+    background-color: green;
+}
+
+.orange.color_swatch {
+    color: black;
+    background-color: orange;
+}
