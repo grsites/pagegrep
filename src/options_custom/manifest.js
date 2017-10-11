@@ -2,58 +2,6 @@ this.manifest = {
     "name": "Greppo",
     "icon": "../../icons/icon128.png",
     "settings": [
-        {
-            "tab": "Settings",
-            "group": "Keyboard Shortcut",
-            "name": "shortcut_modifier",
-            "type": "popupButton",
-            "label": "Modifier:",
-            "options": {
-                "values": [
-                    {
-                        "value": "control-shift",
-                        "text": "Control-Shift",
-                    },
-                    {
-                        "value": "control-alt",
-                        "text": "Control-Alt",
-                    }		    
-                ],
-            }
-        },
-
-        {
-            "tab": "Settings",
-            "group": "Keyboard Shortcut",
-            "name": "shortcut_key",
-            "type": "popupButton",
-            "label": "Key:",
-            "options": {
-                "values": [
-                    {
-                        "value": "a",
-                        "text": "A",
-                    },
-                    {
-                        "value": "g",
-                        "text": "G",
-                    },
-                ],
-            }
-        },
-
-        {
-            "tab": "Settings",
-            "group": "Activate",
-            "name": "activate",
-            "type": "radioButtons",
-            "label": "Enable text highlights for all new tabs:",
-            "options":  [
-		{"text": "On", "value": "on"},
-		{"text": "Off", "value": "off"},
-	    ]
-        },
-        
         
         {
             "tab": "Keywords",
@@ -163,7 +111,60 @@ this.manifest = {
             "name": "group5_keywords",
             "type": "textarea",
             "label": "List of keywords (one per line):"
-        }
+        },
+        
+        {
+            "tab": "Settings",
+            "group": "Keyboard Shortcut",
+            "name": "shortcut_modifier",
+            "type": "popupButton",
+            "label": "Modifier:",
+            "options": {
+                "values": [
+                    {
+                        "value": "control-shift",
+                        "text": "Control-Shift",
+                    },
+                    {
+                        "value": "control-alt",
+                        "text": "Control-Alt",
+                    }		    
+                ],
+            }
+        },
+
+        {
+            "tab": "Settings",
+            "group": "Keyboard Shortcut",
+            "name": "shortcut_key",
+            "type": "popupButton",
+            "label": "Key:",
+            "options": {
+                "values": [
+                    {
+                        "value": "a",
+                        "text": "A",
+                    },
+                    {
+                        "value": "g",
+                        "text": "G",
+                    },
+                ],
+            }
+        },
+
+        {
+            "tab": "Settings",
+            "group": "Activate",
+            "name": "activate",
+            "type": "radioButtons",
+            "label": "Enable text highlights for all new tabs:",
+            "options":  [
+		{"text": "On", "value": "on"},
+		{"text": "Off", "value": "off"},
+	    ]
+        }        
+        
         
     ],
     "alignment": [

@@ -17,7 +17,6 @@
     "persistent": true,
     "scripts": ["src/bg.js"]
   },  
-  "default_locale": "en",
   "permissions": [
     "tabs", "storage"
   ],
