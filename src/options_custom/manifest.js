@@ -160,12 +160,10 @@ this.manifest = {
             "type": "radioButtons",
             "label": "Enable text highlights for all new tabs:",
             "options":  [
-		{"text": "On", "value": "on"},
-		{"text": "Off", "value": "off"},
-	    ]
+                {"text": "On", "value": "on"},
+                {"text": "Off", "value": "off"},
+            ]
         }        
-        
-        
     ],
     "alignment": [
         [

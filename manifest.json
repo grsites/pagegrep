@@ -23,10 +23,10 @@
   "commands": {
     "toggle-greppo": {
       "suggested_key": {
-        "default": "Ctrl+Shift+U",
-        "mac": "Command+Shift+U",
-        "windows": "Ctrl+Shift+U",
-        "linux": "Ctrl+Shift+U"
+        "default": "Alt+Shift+G",
+        "mac": "Alt+Shift+G",
+        "windows": "Alt+Shift+G",
+        "linux": "Alt+Shift+G"
       },
       "description": "Toggle Greppo"
     }
