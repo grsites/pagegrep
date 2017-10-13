@@ -1,16 +1,16 @@
 {
-  "name": "Greppo",
+  "name": "Page Grep",
   "version": "1.0",
   "manifest_version": 2,
   "description": "This extension automatically highlights keywords on a web page",
-  "homepage_url": "http://extensionizr.com",
+  "homepage_url": "http://www.pagegrep.com",
   "icons": {
     "128": "icons/icon128.png"
   },
   "options_page": "src/options_custom/index.html",
   "browser_action": {
     "default_icon": "icons/icon19.png",
-    "default_title": "Greppo",
+    "default_title": "Page Grep",
     "default_popup": "src/browser_action/browser_action.html"
   },
   "background": {
@@ -21,14 +21,14 @@
     "tabs", "storage"
   ],
   "commands": {
-    "toggle-greppo": {
+    "toggle-pagegrep": {
       "suggested_key": {
         "default": "Alt+Shift+G",
         "mac": "Alt+Shift+G",
         "windows": "Alt+Shift+G",
         "linux": "Alt+Shift+G"
       },
-      "description": "Toggle Greppo"
+      "description": "Toggle Page Grep"
     }
   },
   "content_scripts": [

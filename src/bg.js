@@ -8,10 +8,13 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 
 chrome.commands.onCommand.addListener(function(command) {
-    if (command == "toggle-greppo") {
-        chrome.storage.sync.get(['activate'], function(items) {
-            chrome.storage.sync.set({'activate': !items['activate']}, function() {});
-        });
+    if (command == "toggle-pagegrep") {
+        activate = localStorage['store.settings.activate'];
+        if (activate == "on") activate = "off"
+        else activate = "on";
+        localStorage['store.settings.activate'] = activate;
     }
 });
 
+if (localStorage['store.settings.activate'] == undefined)
+    localStorage['store.settings.activate'] = "on";
