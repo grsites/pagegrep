@@ -2,33 +2,33 @@
  * Place your custom CSS styles here.
  **/
 
-.greppo {
+.pagegrep {
     display: inline-block;
     font-weight: bold;
     border: 1px solid #666;
 }
 
-.greppo.red {
+.pagegrep.red {
     color: white;
     background-color: red;
 }
 
-.greppo.yellow {
+.pagegrep.yellow {
     color: black;
     background-color: yellow;
 }
 
-.greppo.blue {
+.pagegrep.blue {
     color: white;
     background-color: blue;
 }
 
-.greppo.green {
+.pagegrep.green {
     color: white;
     background-color: green;
 }
 
-.greppo.orange {
+.pagegrep.orange {
     color: black;
     background-color: orange;
 }

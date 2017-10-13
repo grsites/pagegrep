@@ -14,32 +14,37 @@ label.setting.label.radio-buttons {
 
 .color_swatch {
     display: inline-block;
-    width: 70px;
+    width: 60px;
     padding: 2px;
-    font-weight: bold;
+    cursor: pointer;
 }
 
 .red.color_swatch {
     color: white;
     background-color: red;
+    font-weight: bold;
 }
 
 .yellow.color_swatch {
     color: black;
     background-color: yellow;
+    font-weight: bold;
 }
 
 .blue.color_swatch {
     color: white;
     background-color: blue;
+    font-weight: bold;
 }
 
 .green.color_swatch {
     color: white;
     background-color: green;
+    font-weight: bold;
 }
 
 .orange.color_swatch {
     color: black;
     background-color: orange;
+    font-weight: bold;
 }
